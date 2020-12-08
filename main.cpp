@@ -35,7 +35,6 @@ public:
 		assists = 0;
 		rebounds = 0;
 	}
-
 	Player(string name, double ppg, double steals, double blocks, double assists, double rebounds) {
 
 		this->name = name;
@@ -45,22 +44,18 @@ public:
 		this->assists = assists;
 		this->rebounds = rebounds;
 	}
-
 	string randomName() {
 
 		return name;
 	}
-
 	void generateData() {
 
 		name = randomName();
 	}
-
 	void printStats() {
 
 		cout << name << ": " << fixed << setprecision(2) << ppg << ", " << steals << ", " << blocks << ", " << assists << ", " << rebounds << endl;
 	}
-
 	vector<double> getStats() {
 
 		vector<double> stats;
@@ -89,7 +84,7 @@ double partitionPPG(vector<Player>& players, int low, int high) {
 		}
 	}
 	swap(players[i+1], players[high]);
-	return i+1;
+	return i + 1;
 }
 
 double partitionSteals(vector<Player>& players, int low, int high) {
@@ -459,7 +454,7 @@ int main()
 	//* ===== Main User Interface ===== *//
 	
 	cout << "|| Welcome to the Best Basketball Player [Men & Women] Database Software!!! ||" << endl;
-	cout << "|| ***Copyright Pending*** The Reference Referees LLC, Best Basketball Player Software ||" << endl;
+	cout << "|| ***Copyright Pending*** The Reference& Referees LLC, Best Basketball Player Software ||" << endl;
 	cout << endl << "Here are your database search options, please select an option to proceed" << endl;
 	cout << "- [A] Print All Player Stats" << endl;
 	cout << "- [B] Search for a player by name" << endl;
